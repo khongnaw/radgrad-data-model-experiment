@@ -1,4 +1,4 @@
-
+// cool
 // Before loading sample data model, delete all pre-existing data.
 RadGrad.deleteAll();
 RadGrad.verifyEmptyDataModel();

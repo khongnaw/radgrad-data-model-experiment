@@ -1,6 +1,42 @@
 defineUsers = function() {
   let sampleUsers = [
     {
+      firstName: "Bobby",
+      middleName: "",
+      lastName: "Smith",
+      slug: "bobbysmith",
+      password: "foo",
+      uhEmail: "bob@hawaii.edu",
+      role: RadGrad.role.student
+    },
+    {
+      firstName: "Esther",
+      middleName: "",
+      lastName: "Lee",
+      slug: "estherlee",
+      password: "foo",
+      uhEmail: "esther@hawaii.edu",
+      role: RadGrad.role.student
+    },
+    {
+      firstName: "Aaron",
+      middleName: "",
+      lastName: "Ohta",
+      slug: "ohta",
+      password: "foo",
+      uhEmail: "ohta@hawaii.edu",
+      role: RadGrad.role.faculty
+    },
+    {
+      firstName: "Wayne",
+      middleName: "",
+      lastName: "Shiroma",
+      slug: "shiroma",
+      password: "foo",
+      uhEmail: "shiroma@hawaii.edu",
+      role: RadGrad.role.faculty
+    },
+    {
       firstName: "Philip",
       middleName: "Meadows",
       lastName: "Johnson",
@@ -18,6 +54,7 @@ defineUsers = function() {
       uhEmail: "henric@hawaii.edu",
       role: RadGrad.role.faculty
     },
+
     {
       firstName: "Sergey",
       middleName: "",
