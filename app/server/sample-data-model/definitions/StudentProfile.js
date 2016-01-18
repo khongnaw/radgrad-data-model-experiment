@@ -25,10 +25,10 @@ defineStudentProfile = function() {
   ];
  // esther course instance
   let estherCourseInstanceData = [
-    {semesterID: RadGrad.semester.get("Fall", 2015), course: "ics623", verified: false, grade: "B", studentID: estherID},
-    {semesterID: RadGrad.semester.get("Fall", 2014), course: "nonICS-1xx", verified: false, grade: "B", studentID: estherID, note: "Art 132"},
-    {semesterID: RadGrad.semester.get("Spring", 2016), course: "ics414", verified: true, grade: "A", studentID: estherID},
-    {semesterID: RadGrad.semester.get("Spring", 2016), course: "ics351", verified: true, grade: "A", studentID: estherID}
+    {semesterID: RadGrad.semester.get("Fall", 2015), course: "ics212", verified: false, grade: "A", studentID: estherID},
+    {semesterID: RadGrad.semester.get("Fall", 2014), course: "nonICS-1xx", verified: true, grade: "C", studentID: estherID, note: "Eng 101"},
+    {semesterID: RadGrad.semester.get("Spring", 2016), course: "ics311", verified: true, grade: "B+", studentID: estherID},
+    {semesterID: RadGrad.semester.get("Spring", 2016), course: "ics351", verified: true, grade: "D", studentID: estherID}
   ];
 
   let sampleCourseInstanceIDs = _.map(sampleCourseInstanceData, RadGrad.courseinstance.define)
@@ -111,7 +111,7 @@ defineStudentProfile = function() {
   RadGrad.user.setDegreePlanID(bobbyID, bobbyDegreePlan);
   RadGrad.user.setDegreeGoalIDs(bobbyID, [RadGrad.slug.getEntityID("degree-goal-sv-tech", "DegreeGoal")]);
   RadGrad.user.setInterestTagIDs(bobbyID, [RadGrad.slug.getEntityID("software-engineering", "Tag")]);
-  RadGrad.user.setPicture(bobbyID, "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/000/1eb/082/154da42.jpg");
+  RadGrad.user.setPicture(bobbyID, "");
   RadGrad.user.setAboutMe(bobbyID, "I am a student at the [University of Hawaii](http://www.hawaii.edu/).");
   RadGrad.user.setSemesterID(bobbyID, RadGrad.semester.get("Fall", 2018));
 
@@ -119,8 +119,8 @@ defineStudentProfile = function() {
   RadGrad.user.setDegreeGoalIDs(estherID, [RadGrad.slug.getEntityID("degree-goal-sv-tech", "DegreeGoal")]);
   RadGrad.user.setInterestTagIDs(estherID, [RadGrad.slug.getEntityID("software-engineering", "Tag")]);
   RadGrad.user.setPicture(estherID, "");
-  RadGrad.user.setAboutMe(estherID, "I am a student at the [University of Hawaii](http://www.hawaii.edu/).");
-  RadGrad.user.setSemesterID(estherID, RadGrad.semester.get("Fall", 2018));
+  RadGrad.user.setAboutMe(estherID, "I am an ICS student and I love to learn !");
+  RadGrad.user.setSemesterID(estherID, RadGrad.semester.get("Fall", 2011));
 
 
 
